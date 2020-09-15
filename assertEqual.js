@@ -1,3 +1,5 @@
+// Function to check if two elements are equal
+
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
