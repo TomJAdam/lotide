@@ -19,13 +19,11 @@ const without = (array, remove) => {
   let outputArray = [];
 
   for (let ar of array) {
-    let match = true;
+    let match = false;
     for (let rem of remove) {
-      if (ar !== rem) {
-        match = false;
-      } else {
+      if (ar === rem) {
         match = true;
-      }
+      } 
     }
     if (match === false) {
       outputArray.push(ar);
