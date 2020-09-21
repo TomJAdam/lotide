@@ -7,7 +7,7 @@ const middle = require('./middle');
 const eqArrays = require('./eqArrays');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
-const eqObject = require('./assertObjectEquals');
+const eqObject = require('./eqObjects');
 const findKey = require('./findKey');
 const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
@@ -17,21 +17,23 @@ const without = require('./without');
 
 //export function object
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  eqArrays: eqArrays,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqObject: eqObject,
-  findKey: findKey,
-  flatten: flatten,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without
+  head,
+  tail,
+  middle,
+  eqArrays,
+  countLetters,
+  countOnly,
+  eqObject,
+  findKey,
+  flatten,
+  letterPositions,
+  map,
+  takeUntil,
+  without
 };
 
 
 // ** TEST **
 console.log(module.exports);
+
+console.log(flatten([1, [2], [3, 4], [[5]], [[6, [7]]]]));

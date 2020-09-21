@@ -4,10 +4,10 @@
 const findKey = (object, callback) => {
   let result = undefined;
   for (let obj in object) {
-    if(callback(object[obj])) {
+    if (callback(object[obj])) {
       result = obj;
       break;
-    } 
+    }
   }
   return result;
 };

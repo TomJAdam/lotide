@@ -8,7 +8,7 @@ const without = (array, remove) => {
     for (let rem of remove) {
       if (ar === rem) {
         match = true;
-      } 
+      }
     }
     if (match === false) {
       outputArray.push(ar);

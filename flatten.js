@@ -1,7 +1,7 @@
 
 //Fucntion: to flatten an array
 const flatten = (array) => {
-  flatArray = [];
+  let flatArray = [];
 
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i]) === false) {
@@ -12,7 +12,7 @@ const flatten = (array) => {
       }
     }
   }
-return flatArray;
+  return flatArray;
 };
 
 //export

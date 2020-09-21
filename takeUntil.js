@@ -5,10 +5,10 @@ const takeUntil = (array, callback) => {
   for (let item of array) {
     if (!callback(item))
       results.push(item);
-      if (callback(item)) {
-        break;
-      }
+    if (callback(item)) {
+      break;
     }
+  }
   return results;
 };
 

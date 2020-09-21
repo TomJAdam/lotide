@@ -1,6 +1,6 @@
 // Test file for countLetters.js
 
-// import 
+// import
 const assert = require('chai').assert;
 const countLetters = require('../countLetters');
 

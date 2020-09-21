@@ -13,7 +13,7 @@ const letterPositions = (sentence) => {
         positions.push(sentence.indexOf(letter, mostRecentPosition + 1));
       }
     }
-  } 
+  }
 
   return results;
 };
