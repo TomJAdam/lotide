@@ -6,9 +6,9 @@ const eqArrays = (arrayOne, arrayTwo) => {
 //asserts if equal or not using eqArrays
 const assertArraysEqual = (arOne, arTwo) => {
   if (eqArrays(arOne, arTwo) === true) {
-    console.log(`✅✅✅Assertion Passed`);
+    return `✅✅✅Assertion Passed: [${arOne}] === [${arTwo}]`;
   } else if (eqArrays(arOne, arTwo) === false) {
-    console.log(`🛑🛑🛑 Assertion Failed`);
+    return `🛑🛑🛑 Assertion Failed: [${arOne}] !== [${arTwo}]`;
   }
 };
 
