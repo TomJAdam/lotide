@@ -1,7 +1,5 @@
 //copares arrays
-const eqArrays = (arrayOne, arrayTwo) => {
-  return JSON.stringify(arrayOne) === JSON.stringify(arrayTwo);
-};
+const eqArrays = require('./eqArrays');
 
 //compares objects
 const eqObjects = (objectOne, objectTwo) => {
@@ -23,20 +21,5 @@ const eqObjects = (objectOne, objectTwo) => {
   return true;
 };
 
-//assertion
-const assertObjectsEqual = (actual, expected) => {
-  const inspect = require('util').inspect;
-  const compare = eqObjects(actual, expected);
-  if (compare === true) {
-    return `✅✅✅Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`;
-  } else if (compare === false) {
-    return `🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`;
-  }
-};
 
-// ** TEST **
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1", a: '2' };
-
-console.log(assertObjectsEqual(cd, cd));
-console.log(assertObjectsEqual(cd, dc));
+module.exports = eqObjects;

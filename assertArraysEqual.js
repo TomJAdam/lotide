@@ -10,5 +10,7 @@ const assertArraysEqual = (arOne, arTwo) => {
   }
 };
 
+//export
 module.exports = assertArraysEqual;
 
+// Test files in test/assertArraysEqualTest.js
