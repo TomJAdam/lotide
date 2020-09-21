@@ -1,6 +1,23 @@
 // Test for tail.js
-const assertEqual = require('../assertEqual');
+
+//imports:
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+// test cases
+
+describe("#tail", () => {
+
+  it("result = ['lighthouse', 'labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.deepEqual(result, ["Lighthouse", "Labs"]);
+  });
+
+  it("result = [1, 2, 3]", () => {
+    const result1 = tail([0, 1, 2, 3]);
+    assert.deepEqual(result1, [1, 2, 3]);
+  });
+
+});
+
+

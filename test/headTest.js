@@ -1,10 +1,10 @@
 // Test file for head.js
 
-//mocha/chai
+//imports:
 const assert = require('chai').assert;
 const head   = require('../head');
 
-// test cases for head.js
+// test cases
 
 describe("#head", () => {
 
