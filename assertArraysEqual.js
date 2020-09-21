@@ -1,8 +1,5 @@
-
-//compares arrays
-const eqArrays = (arrayOne, arrayTwo) => {
-  return JSON.stringify(arrayOne) === JSON.stringify(arrayTwo);
-};
+//eq arrays
+const eqArrays = require('./eqArrays');
 
 //asserts if equal or not using eqArrays
 const assertArraysEqual = (arOne, arTwo) => {
@@ -13,6 +10,5 @@ const assertArraysEqual = (arOne, arTwo) => {
   }
 };
 
-// ** TEST **
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [1, 4, 3]);
+module.exports = assertArraysEqual;
+
