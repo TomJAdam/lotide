@@ -1,5 +1,6 @@
 
 //Fucntion: to flatten an array
+
 const flatten = (array) => {
   let flatArray = [];
 

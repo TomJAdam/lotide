@@ -1,4 +1,4 @@
-// Take until function, takes array prints untill call back is called
+// Take until function, takes array and returns new array untill call back is satisfied 
 
 const takeUntil = (array, callback) => {
   const results = [];

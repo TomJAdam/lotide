@@ -1,12 +1,12 @@
 {
-  "name": "test",
+  "name": "@tomadam/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a collection of useful functions",
   "main": "assertArraysEqualTest.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Tom Adam <tom.adam21@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
