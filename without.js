@@ -1,21 +1,6 @@
-//compares arrays
-const eqArrays = (arrayOne, arrayTwo) => {
-  return JSON.stringify(arrayOne) === JSON.stringify(arrayTwo);
-};
-
-//asserts if equal or not using eqArrays
-const assertArraysEqual = (arOne, arTwo) => {
-  if (eqArrays(arOne, arTwo) === true) {
-    console.log(`✅✅✅Assertion Passed`);
-  } else if (eqArrays(arOne, arTwo) === false) {
-    console.log(`🛑🛑🛑 Assertion Failed`);
-  }
-};
-
-
+// function without: to compare arrays and print elements in first array that do not appear in second
 
 const without = (array, remove) => {
-  // outputArray = array.filter(val => !remove.includes(val));
   let outputArray = [];
 
   for (let ar of array) {
@@ -32,9 +17,7 @@ const without = (array, remove) => {
   return outputArray;
 };
 
+//export
+module.exports = without;
 
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-console.log(without(["bob", "jack", "mike", "tom"], [1, 2, "3", "jack"]));
 
-console.log(assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]));

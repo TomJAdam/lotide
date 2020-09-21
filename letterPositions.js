@@ -1,19 +1,4 @@
-//compares arrays
-const eqArrays = (arrayOne, arrayTwo) => {
-  return JSON.stringify(arrayOne) === JSON.stringify(arrayTwo);
-};
-
-//asserts if equal or not using eqArrays
-const assertArraysEqual = (arOne, arTwo) => {
-  if (eqArrays(arOne, arTwo) === true) {
-    return `✅✅✅Assertion Passed: [${arOne}] === [${arTwo}]`;
-  } else if (eqArrays(arOne, arTwo) === false) {
-    return `🛑🛑🛑 Assertion Failed: [${arOne}] !== [${arTwo}]`;
-  }
-};
-
-
-// Function:
+// Function for letterPositions: returns object with indexes of each letter in sentence
 
 const letterPositions = (sentence) => {
   let results  = {};
@@ -33,18 +18,6 @@ const letterPositions = (sentence) => {
   return results;
 };
 
-console.log(letterPositions('test test test'));
-console.log(assertArraysEqual(letterPositions('test test test'), { t: [ 0, 3, 5, 8, 10, 13 ], e: [ 1, 6, 11 ], s: [ 2, 7, 12 ] }));
+//export
+module.exports = letterPositions;
 
-  /*
-  {
-    t: [0],
-    e: [1],
-    s: [2]
-  }
-  results[t] = [0]
-  ....
-  results[t] = [0, 5, 9]
-  results[t].length = 3
-  lastIndexOfArray = results[...].length - 1
-  */

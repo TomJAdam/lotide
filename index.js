@@ -9,6 +9,11 @@ const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const eqObject = require('./assertObjectEquals');
 const findKey = require('./findKey');
+const flatten = require('./flatten');
+const letterPositions = require('./letterPositions');
+const map = require('./map');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 //export function object
 module.exports = {
@@ -17,8 +22,14 @@ module.exports = {
   middle: middle,
   eqArrays: eqArrays,
   countLetters: countLetters,
-  countOnly = countOnly,
-  eqObject = eqObject
+  countOnly: countOnly,
+  eqObject: eqObject,
+  findKey: findKey,
+  flatten: flatten,
+  letterPositions: letterPositions,
+  map: map,
+  takeUntil: takeUntil,
+  without: without
 };
 
 

@@ -1,16 +1,3 @@
-//compares arrays
-const eqArrays = (arrayOne, arrayTwo) => {
-  return JSON.stringify(arrayOne) === JSON.stringify(arrayTwo);
-};
-
-//asserts if equal or not using eqArrays
-const assertArraysEqual = (arOne, arTwo) => {
-  if (eqArrays(arOne, arTwo) === true) {
-    console.log(`✅✅✅Assertion Passed`);
-  } else if (eqArrays(arOne, arTwo) === false) {
-    console.log(`🛑🛑🛑 Assertion Failed`);
-  }
-};
 
 //Fucntion: to flatten an array
 const flatten = (array) => {
@@ -28,5 +15,6 @@ const flatten = (array) => {
 return flatArray;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]))
-console.log(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [ 1, 2, 3, 4, 5, 6 ]));
+//export
+module.exports = flatten;
+

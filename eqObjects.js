@@ -1,3 +1,5 @@
+// *** NOT SOLVED ***
+
 //copares arrays
 const eqArrays = (arrayOne, arrayTwo) => {
   return JSON.stringify(arrayOne) === JSON.stringify(arrayTwo);
