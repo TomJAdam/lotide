@@ -1,4 +1,5 @@
 // *** NOT SOLVED ***
+// TRYING TO COMPARE OBJECTS WITHIN OBJECTS 
 
 //copares arrays
 const eqArrays = (arrayOne, arrayTwo) => {
